@@ -125,6 +125,11 @@ img {
     flex-direction: row;
     margin: 25px;
     justify-content: center;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
 }
 .content-text {
     padding-left: 35px;
@@ -136,11 +141,11 @@ img {
 .about-wrap {
     margin: 20px;
     text-align: center;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -256,6 +261,15 @@ div.gallery {
         text-align: center;
 }
 
+@media screen and (max-width: 560px) {
+    div.gallery {
+        max-width: 400px;
+    }
+
+    div.gallery img {
+        max-width: 400px;
+    }
+}
 
 .credit p {
     font-size: 20px;
