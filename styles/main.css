@@ -34,10 +34,9 @@ ul {
 }
 
 ol li {
-    text-decoration: none;
-    list-style-type: none;
     color: var(--alt-color);
 }
+
 
 
 .navbar a {
@@ -72,11 +71,11 @@ img {
 
 /* Boxes and stuff */
 
-/* Navbar attempt */
+/* NAVBAR */
 
 .wrapper {
-    max-width: 2100px;
     margin: auto;
+    max-width: 2000px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -130,6 +129,9 @@ img {
         font-weight: 600;
     }
 }
+
+
+/* MAIN CONTENT */
     
 }    
 .content {
@@ -192,6 +194,7 @@ img {
 
 /* END OF COOL EFFECT */
 
+
     .about-wrap h1 {
         color: var(--alt-color);
         margin-left: 5px;
@@ -236,11 +239,7 @@ img {
 
 
 
-/* End of About */
-.blogger {
-    display: flex;
-    flex-direction: column;
-}
+/* GALLERY */
 
     .portrait {
         border: 1px solid rgb(83, 83, 83);
@@ -301,18 +300,44 @@ div.gallery {
     text-align: center;
 }
 
+
+/* BLOG */
+
+
+.blogger {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .blog-nav {
-    max-width: 560px;
     padding: 20px;
     background-color: rgb(247, 247, 247);
-    text-decoration: dotted;
+    line-height: 40px;
+    font-weight: 600;
 }
+    .blog-nav h3 {
+        border-bottom: 1px solid rgb(148, 148, 148);
+    }
+
+    .blog-nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .blog-nav a:hover {
+        color: var(--main-color);
+    }
+
+    .blog-nav a:active {
+        color: white;
+    }
 
 .blog-wrapper {
     display: flex;
     flex-direction: row;
     margin: 25px;
-    justify-content: left;
+    justify-content: center;
     animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
@@ -340,7 +365,14 @@ div.gallery {
 
 @media screen and (max-width: 1100px) {
     .blog-wrapper {
+        align-items: center;
         flex-direction: column;
+    }
+
+
+    .blog-nav {
+        display: none;
+            /* NOTE TO SELF/TEACHER: I know this is not optimal. However; aesthetics > everything */
     }
 
     .blog-img {
@@ -366,6 +398,9 @@ div.gallery {
     text-decoration: none;
     color: rgb(24, 24, 24);
 }
+    .foot-container a:hover {
+        color: var(--main-color);
+    }
 
 .foot-container h3 {
     color: var(--alt-color);
