@@ -75,6 +75,8 @@ img {
 /* Navbar attempt */
 
 .wrapper {
+    max-width: 2100px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
