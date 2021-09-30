@@ -293,6 +293,17 @@ div.gallery {
     }
 }
 
+@media screen and (max-width: 450px) {
+    div.gallery {
+        max-width: 350px;
+    }
+
+    div.gallery img {
+        max-width: 350px;
+    }
+
+}
+
 .credit p {
     font-size: 20px;
     margin: 10px;
@@ -346,11 +357,14 @@ div.gallery {
 }
 
 .blog-boxes {
-    text-align: justify;
     padding: 0 30px 0 30px;
     line-height: 1.6em;
     max-width: 600px;
 }
+
+    .blog-boxes p {
+        text-align: justify;
+    }
 
 .blog-img {
     max-width: 600px;
